@@ -1,0 +1,107 @@
+/* styles/globals.css */
+
+@import 'bootstrap/dist/css/bootstrap.css';
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.search-bar {
+  padding: 10px;
+  /* margin: 2vw;
+  position: relative; */
+  
+  color: white;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent; /* Transparent background */
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+/* Adjust styles for different screen sizes */
+/* @media screen and (max-width: 600px) {
+  .search-bar {
+    width: 80%;
+  }
+} */
+
+body {
+  /* Linear gradient with background image */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://static.vecteezy.com/system/resources/previews/004/242/985/non_2x/abstract-luxury-shiny-dark-blue-background-with-lines-golden-glowing-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  overflow-x: hidden;
+}
+.sidebar .item1{
+  margin-top: 3rem;
+}
+.item2{
+  margin-top: 1.5rem;
+}
+
+.card-group {
+  display: flex;
+  /* gap: 20px; Add the desired gap between cards */
+  flex-wrap: wrap;
+  width: 63rem;
+  min-width: 100px;
+  transform: translate(-7rem, -5rem);
+}
+
+.card {
+  background-color: #3b0048;
+  width: 2rem;
+  min-width: 100px;
+  color: white;
+  padding: 20px;
+  margin-left: -7rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+
+
+/* styles/globals.css */
+/* ... Your existing CSS rules ... */
+
+/* Adjust styles for different screen sizes */
+@media screen and (max-width: 768px) {
+  .card-group {
+    justify-content: center; /* Center align cards horizontally */
+    transform: translate(-20rem);
+  }
+
+  .card {
+    width: 100%; /* Make cards full width on small screens */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    margin-top: 1rem; /* Adjust top margin */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+
+  /* Adjust the specific card styles here if needed */
+  .card h2 {
+    font-size: 1.2rem; /* Adjust font size for headings */
+  }
+}
