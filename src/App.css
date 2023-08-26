@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,19 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* Linear gradient with background image */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://static.vecteezy.com/system/resources/previews/004/242/985/non_2x/abstract-luxury-shiny-dark-blue-background-with-lines-golden-glowing-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+body {
+}
+
